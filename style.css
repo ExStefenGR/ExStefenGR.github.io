@@ -4,6 +4,7 @@ body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
   background-image: url(https://cdn.glitch.global/d9e234b1-2960-45ba-97a8-0f45c0e6316e/bg.jpg?v=1657927223811);
+object-fit: cover;
 }
 
 h1 {
