@@ -1,0 +1,108 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-image: url(https://cdn.glitch.global/d9e234b1-2960-45ba-97a8-0f45c0e6316e/bg.jpg?v=1657927223811);
+}
+
+h1 {
+  font-style: bold;
+  color: white;
+}
+
+.button {
+  background-color: #128c29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  position: static;
+}
+
+.button2 {
+  background-color: #128c29;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 13px;
+  position: static;
+} /* Blue */
+.button3 {
+  background-color: #bd1772;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 32px;
+  position: static;
+} /* purple */
+.button4 {
+  background-color: #e7e7e7;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 13px;
+  position: static;
+} /* Gray */
+.button5 {
+  background-color: #fcba03;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 13px;
+  position: static;
+}
+
+div {
+  position: static;
+  width: 500px;
+  border: 2px solid white;
+  padding: 5px;
+  margin: 5px;
+}
+
+div2 {
+  position: fixed;
+  width: 40px;
+  border: 1px solid black;
+  padding: 50px;
+  margin: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+p {
+  color: cyan;
+}
+p1 {
+  color: orange;
+  font-style: bold;
+  font-size: 21px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: cyan;
+  text-align: left;
+}
