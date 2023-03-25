@@ -112,3 +112,33 @@ header, .container, footer {
 .nav-menu li a:hover {
   background-color: #128c29;
 }
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #128c29;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #0a6a21;
+}
