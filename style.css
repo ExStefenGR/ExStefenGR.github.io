@@ -89,26 +89,26 @@ header, .container, footer {
 
 /* Navigation menu styles */
 .nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
 }
 
-    .nav-menu li {
-        padding: 10px;
-    }
+.nav-menu li {
+  padding: 10px;
+}
 
-       .nav-menu li a {
-            display: block;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
+.nav-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+}
 
-            .nav-menu li a:hover {
-                background-color: #128c29;
-            }
+.nav-menu li a:hover {
+  background-color: #128c29;
+}
