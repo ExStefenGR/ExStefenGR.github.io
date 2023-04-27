@@ -7,7 +7,9 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: fill;
+    min-height: 100vh;
 }
+
 
 header, .container, footer {
     text-align: center;
