@@ -23,7 +23,6 @@ main {
     flex-direction: column;
 }
 
-ul,
 li {
     color: cyan;
     background-color: rgba(0, 0, 0, 0.6);
