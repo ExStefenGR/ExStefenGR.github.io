@@ -23,33 +23,18 @@ main {
     flex-direction: column;
 }
 
-li {
-    color: cyan;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px 0;
-}
 
 
-
-
-header,
-.container,
-footer {
+header, .container, footer {
     text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     color: white;
 }
 
 .button {
-    background-color: #128c29;
-    /* Green */
+    background-color: #128c29; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -114,9 +99,7 @@ p {
     text-align: left;
 }
 
-header,
-.container,
-footer {
+header, .container, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,28 +107,28 @@ footer {
 
 /* Navigation menu styles */
 .nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
 }
 
 .nav-menu li {
-    padding: 10px;
+  padding: 10px;
 }
 
 .nav-menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px 10px;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
 .nav-menu li a:hover {
-    background-color: #128c29;
+  background-color: #128c29;
 }
 
 .project-container {
