@@ -23,7 +23,16 @@ main {
     flex-direction: column;
 }
 
+ul {
+    list-style-type: none; /* This removes the default bullet points */
+    padding: 0;
+    margin: 0;
+}
 
+li {
+    padding: 10px 0; /* This adds some space above and below each list item */
+    color: cyan; /* This sets the text color */
+}
 
 header, .container, footer {
     text-align: center;
