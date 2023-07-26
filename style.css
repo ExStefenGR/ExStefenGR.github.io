@@ -24,14 +24,17 @@ main {
 }
 
 ul {
-    list-style-type: none; /* This removes the default bullet points */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 li {
-    padding: 10px 0; /* This adds some space above and below each list item */
-    color: cyan; /* This sets the text color */
+    color: cyan;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 header, .container, footer {
