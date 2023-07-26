@@ -23,13 +23,13 @@ main {
     flex-direction: column;
 }
 
-ul {
+ul.skills-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+ul.skills-list li {
     color: cyan;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
