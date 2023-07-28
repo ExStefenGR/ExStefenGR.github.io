@@ -1,20 +1,24 @@
 /* CSS files add styling rules to your content */
 
 html {
-    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 body {
     font-family: helvetica, arial, sans-serif;
+    margin: 0;
     padding: 0;
     background-image: url(https://cdn.glitch.global/d9e234b1-2960-45ba-97a8-0f45c0e6316e/bg.jpg?v=1657927223811);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: fill;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 main {
@@ -39,6 +43,9 @@ ul.skills-list li {
 
 header, .container, footer {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h3, h4 {
@@ -69,8 +76,6 @@ h1, h2, h3, h4 {
     margin: 5px;
 }
 
-/* Container */
-
 .container div {
     display: flex;
     justify-content: center;
@@ -85,14 +90,10 @@ h1, h2, h3, h4 {
     margin: 20px 0;
 }
 
-/* Links */
-
 a {
     text-decoration: none;
     color: blue;
 }
-
-/* Text */
 
 p {
     color: cyan;
@@ -111,13 +112,6 @@ p {
     text-align: left;
 }
 
-header, .container, footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Navigation menu styles */
 .nav-menu {
   list-style-type: none;
   margin: 0;
