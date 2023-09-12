@@ -166,3 +166,45 @@ p {
 .project a:hover {
     background-color: #0a6a21;
 }
+
+.youtube-embed {
+    background-color: rgba(0, 119, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(114, 0, 104, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.youtube-embed h4 {
+    margin-bottom: 15px;
+    color: #f1f1f1;
+    font-size: 1.5em;
+}
+
+.youtube-embed iframe {
+    border-radius: 5px;
+}
+
+.futuristic-button {
+    background: linear-gradient(90deg, rgba(0, 216, 255, 1) 0%, rgba(0, 0, 255, 1) 50%, rgba(0, 0, 64, 1) 100%); /* Background Gradient */
+    border: 1px solid #00D8FF; /* Border */
+    box-shadow: 0 0 15px #00D8FF, 0 0 5px #0000FF; /* Outer glow */
+    transition: all 0.3s ease; /* Transition effects */
+}
+
+.futuristic-button a {
+    color: white; /* Text color */
+    font-weight: bold; /* Font weight */
+    text-shadow: 0 0 5px #00D8FF, 0 0 10px #00D8FF; /* Text glow */
+}
+
+.futuristic-button:hover {
+    background: linear-gradient(90deg, rgba(0, 255, 255, 1) 0%, rgba(0, 128, 255, 1) 50%, rgba(0, 64, 128, 1) 100%); /* Background Gradient on hover */
+    box-shadow: 0 0 20px #00FFFF, 0 0 10px #0080FF; /* Outer glow on hover */
+}
+
+.futuristic-button:active {
+    background: linear-gradient(90deg, rgba(0, 128, 255, 1) 0%, rgba(0, 0, 128, 1) 50%, rgba(0, 0, 64, 1) 100%); /* Background Gradient on click */
+    box-shadow: 0 0 5px #0080FF, 0 0 3px #000080; /* Outer glow on click */
+}
