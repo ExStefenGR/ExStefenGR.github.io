@@ -168,7 +168,7 @@ p {
 }
 
 .youtube-embed {
-    background-color: rgba(0, 119, 255, 0.8);
+    background-color: rgba(98, 0, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(114, 0, 104, 0.5);
@@ -187,16 +187,16 @@ p {
 }
 
 .futuristic-button {
-    background: linear-gradient(90deg, rgba(0, 216, 255, 1) 0%, rgba(0, 0, 255, 1) 50%, rgba(0, 0, 64, 1) 100%); /* Background Gradient */
-    border: 1px solid #00D8FF; /* Border */
-    box-shadow: 0 0 15px #00D8FF, 0 0 5px #0000FF; /* Outer glow */
+    background: linear-gradient(90deg, #ff00ff 0%, rgb(150, 0, 150) 50%, rgb(64, 0, 55) 100%); /* Background Gradient */
+    border: 1px solid #ff0077; /* Border */
+    box-shadow: 0 0 15px rgb(255, 0, 221), 0 0 5px rgb(174, 0, 255); /* Outer glow */
     transition: all 0.3s ease; /* Transition effects */
 }
 
 .futuristic-button a {
     color: white; /* Text color */
     font-weight: bold; /* Font weight */
-    text-shadow: 0 0 5px #00D8FF, 0 0 10px #00D8FF; /* Text glow */
+    text-shadow: 0 0 5px #e100ff, 0 0 10px #ff00f2; /* Text glow */
 }
 
 .futuristic-button:hover {
