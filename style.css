@@ -35,7 +35,7 @@ ul.skills-list {
 
 ul.skills-list li {
     color: cyan;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.89);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -97,7 +97,7 @@ a {
 
 p {
     color: cyan;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.89);
     padding: 10px;
     border-radius: 5px;
 }
