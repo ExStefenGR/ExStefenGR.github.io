@@ -1,88 +1,120 @@
-/* CSS files add styling rules to your content */
-
-html {
-    min-height: 100vh;
-    overflow-x: hidden;
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+    background: url('https://cdn.glitch.global/d9e234b1-2960-45ba-97a8-0f45c0e6316e/bg.jpg?v=1657927223811') no-repeat center center fixed;
+    background-size: cover;
 }
 
 body {
-    font-family: helvetica, arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url(https://cdn.glitch.global/d9e234b1-2960-45ba-97a8-0f45c0e6316e/bg.jpg?v=1657927223811);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    object-fit: fill;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    overflow-x: hidden;
 }
 
-main {
+a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 5px;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #128c29;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Main Content Styles */
+.container {
     flex: 1;
     display: flex;
     flex-direction: column;
-}
-
-ul.skills-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul.skills-list li {
-    color: cyan;
-    background-color: rgba(0, 0, 0, 0.89);
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-header, .container, footer {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
-    color: white;
+.container h1, .container h2, .container h3, .container h4 {
+    margin-top: 0;
+}
+
+.container p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+/* Button Styles */
+.button, .itchio-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .button {
-    background-color: #128c29; /* Green */
+    background-color: #128c29;
+    color: #fff;
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    position: static;
+}
+
+.button:hover {
+    background-color: #0a6a21;
 }
 
 .itchio-button {
     background-color: #e7e7e7;
-    color: black;
+    color: #000;
     border: none;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 13px;
-    margin: 5px;
 }
 
-.container div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.itchio-button:hover {
+    background-color: #d7d7d7;
 }
 
+/* Game Embeds */
 .game-embeds {
     display: flex;
     flex-direction: column;
@@ -90,121 +122,68 @@ h1, h2, h3, h4 {
     margin: 20px 0;
 }
 
-a {
-    text-decoration: none;
-    color: blue;
-}
-
-p {
-    color: cyan;
-    background-color: rgb(0 0 0 / 94%);
-    padding: 15px;
-    border-radius: 50px;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+.game-embeds iframe {
     width: 100%;
-    background-color: black;
-    color: cyan;
-    text-align: left;
+    max-width: 560px;
+    margin-bottom: 20px;
 }
 
-.nav-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #333;
-}
-
-.nav-menu li {
-  padding: 10px;
-}
-
-.nav-menu li a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-.nav-menu li a:hover {
-  background-color: #128c29;
-}
-
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.project {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    padding: 1rem;
-    width: 300px;
-    text-align: center;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #128c29;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s;
-}
-
-.project a:hover {
-    background-color: #0a6a21;
-}
-
+/* YouTube Embed */
 .youtube-embed {
-    background-color: rgba(38, 0, 99, 0.568);
+    background-color: rgba(38, 0, 99, 0.7);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(114, 0, 104, 0.5);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .youtube-embed h4 {
     margin-bottom: 15px;
-    color: #b90000;
+    color: #ff5f5f;
     font-size: 1.5em;
 }
 
 .youtube-embed iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
     border-radius: 5px;
 }
 
-.futuristic-button {
-    background: linear-gradient(90deg, #ff00ff 0%, rgb(150, 0, 150) 50%, rgb(64, 0, 55) 100%); /* Background Gradient */
-    border: 1px solid #ff0077; /* Border */
-    box-shadow: 0 0 15px rgb(255, 0, 221), 0 0 5px rgb(174, 0, 255); /* Outer glow */
-    transition: all 0.3s ease; /* Transition effects */
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: cyan;
+    text-align: center;
+    padding: 10px;
 }
 
-.futuristic-button a {
-    color: white; /* Text color */
-    font-weight: bold; /* Font weight */
-    text-shadow: 0 0 5px #e100ff, 0 0 10px #ff00f2; /* Text glow */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .youtube-embed iframe {
+        height: 250px;
+    }
+
+    .button, .itchio-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
 
-.futuristic-button:hover {
-    background: linear-gradient(90deg, rgba(0, 255, 255, 1) 0%, rgba(0, 128, 255, 1) 50%, rgba(0, 64, 128, 1) 100%); /* Background Gradient on hover */
-    box-shadow: 0 0 20px #00FFFF, 0 0 10px #0080FF; /* Outer glow on hover */
-}
+@media (max-width: 480px) {
+    .container p {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 
-.futuristic-button:active {
-    background: linear-gradient(90deg, rgba(0, 128, 255, 1) 0%, rgba(0, 0, 128, 1) 50%, rgba(0, 0, 64, 1) 100%); /* Background Gradient on click */
-    box-shadow: 0 0 5px #0080FF, 0 0 3px #000080; /* Outer glow on click */
+    .button, .itchio-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
 }
