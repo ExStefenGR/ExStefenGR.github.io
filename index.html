@@ -4,37 +4,54 @@
     <meta charset="UTF-8">
     <title>ExStefen - Games Programmer C++/Unity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to ExStefen's portfolio website. Games Programmer specializing in C++ and Unity.">
     <link rel="stylesheet" href="style.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
-        <ul class="nav-menu">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">ExStefen</a>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <!-- Header -->
     <header>
         <h1>ExStefen</h1>
         <h2>Games Programmer C++/Unity</h2>
     </header>
-    <main class="container">
+
+    <!-- Main Content -->
+    <main>
         <section id="home">
             <p>Welcome to my Portfolio Website.<br>Please check GitHub which has both ongoing and finished projects.</p>
 
+            <!-- YouTube Embed -->
             <div class="youtube-embed">
-                <h4>YouTube Tech Demo</h4>
+                <h2>YouTube Tech Demo</h2>
                 <iframe src="https://www.youtube.com/embed/osL-65vxbtc" frameborder="0" allowfullscreen></iframe>
             </div>
 
+            <!-- Itch.io Button -->
             <div>
-                <h4>Itch.io</h4>
-                <a href="https://exstefen.itch.io/" class="itchio-button">My Web/Indie Games</a>
+                <h2>Itch.io</h2>
+                <a href="https://exstefen.itch.io/" class="button">My Web/Indie Games</a>
             </div>
 
+            <!-- GitHub Button -->
             <div>
-                <h4>GitHub</h4>
+                <h2>GitHub</h2>
                 <a class="github-button"
                    href="https://github.com/ExStefenGR"
                    data-size="large"
@@ -42,31 +59,35 @@
                    aria-label="Follow @ExStefenGR on GitHub">Follow @ExStefenGR</a>
             </div>
 
+            <!-- Blogspot Button -->
             <div>
-                <h4>Blogspot</h4>
+                <h2>Blogspot</h2>
                 <a href="https://exstefenstudios.blogspot.com/" target="_blank" class="button">My Blogspot</a>
             </div>
 
+            <!-- Game Embeds -->
             <div class="game-embeds">
-                <iframe frameborder="0"
-                        src="https://itch.io/embed/1044018?linkback=true&amp;border_width=5&amp;bg_color=3b1534&amp;fg_color=b3fefd&amp;link_color=f2fa5b&amp;border_color=903d77"
-                        title="Deruta Frank Part 1">
-                </iframe>
-                <iframe frameborder="0"
-                        src="https://itch.io/embed/1672446?linkback=true&amp;border_width=5&amp;bg_color=33352a&amp;fg_color=71a4e1&amp;link_color=ffe762&amp;border_color=8f111f"
-                        title="SpaceRocks">
-                </iframe>
-                <iframe frameborder="0"
-                        src="https://itch.io/embed/1981743?bg_color=3a2525&amp;fg_color=fceb00&amp;link_color=ff0707&amp;border_color=364a7d"
-                        title="SpaceRocks 2">
-                </iframe>
-                <iframe frameborder="0"
-                        src="https://itch.io/embed/2348074?border_width=2&amp;bg_color=230000&amp;fg_color=ffffff&amp;link_color=ad1db1&amp;border_color=020349"
-                        title="Mind of Solitude">
-                </iframe>
+                <iframe src="https://itch.io/embed/1044018?linkback=true&border_width=5&bg_color=3b1534&fg_color=b3fefd&link_color=f2fa5b&border_color=903d77" title="Deruta Frank Part 1"></iframe>
+                <iframe src="https://itch.io/embed/1672446?linkback=true&border_width=5&bg_color=33352a&fg_color=71a4e1&link_color=ffe762&border_color=8f111f" title="SpaceRocks"></iframe>
+                <iframe src="https://itch.io/embed/1981743?bg_color=3a2525&fg_color=fceb00&link_color=ff0707&border_color=364a7d" title="SpaceRocks 2"></iframe>
+                <iframe src="https://itch.io/embed/2348074?border_width=2&bg_color=230000&fg_color=ffffff&link_color=ad1db1&border_color=020349" title="Mind of Solitude"></iframe>
             </div>
         </section>
     </main>
-    <footer class="footer">Artwork made by Anna Tomatzidou</footer>
+
+    <!-- Footer -->
+    <footer>
+        Artwork made by Anna Tomatzidou
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

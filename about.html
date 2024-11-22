@@ -4,58 +4,85 @@
     <meta charset="UTF-8">
     <title>About - ExStefen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="About ExStefen, a passionate Games Programming graduate with a strong foundation in Unity, Unreal Engine 5, Raylib, and SDL2.">
+    <meta name="description" content="About ExStefen, a passionate Games Programming graduate with a strong foundation in Unity and C++.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" aria-current="page">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">ExStefen</a>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <main class="container">
-        <h1>About Me</h1>
-        <p>I am a highly motivated and passionate Games Programming BSc graduate seeking a position as a Games Programmer.<br>
-            With a strong foundation in Unity 2D and advanced C++ knowledge, I am eager to apply my skills and contribute to the development of innovative games.<br>
-            My research experience, including projects on OpenAI integration in Unity and HIDs, showcases my ability to adapt and solve problems creatively.</p>
 
-        <h2>Education</h2>
-        <p><strong>BSc (Hons) Games Programming</strong><br>
-           London Metropolitan University, UK (July 2023)</p>
-        <p>Achieved a Second Class degree with a focus on Unity 2D and advanced C++ programming. Relevant coursework includes Game Design, Game Development, Game Engine Architecture, 3D Graphics Programming, and Artificial Intelligence.</p>
+    <!-- Main Content -->
+    <main>
+        <section class="container">
+            <h1>About Me</h1>
+            <p>I am a highly motivated and passionate Games Programming BSc graduate seeking a position as a Games Programmer.<br>
+                With a strong foundation in Unity 2D and advanced C++ knowledge, I am eager to apply my skills and contribute to the development of innovative games.<br>
+                My research experience, including projects on OpenAI integration in Unity and HIDs, showcases my ability to adapt and solve problems creatively.</p>
 
-        <h2>Key Skills</h2>
-        <ul class="skills-list">
-            <li>Unity 2D: Proficient in developing 2D games and applications using Unity Engine; experienced with asset creation, physics, and UI implementation.</li>
-            <li>C++ Programming: Advanced knowledge of C++, with experience in designing and developing efficient game systems, data structures, and algorithms.</li>
-            <li>Problem Solving: Excellent problem-solving skills, able to overcome challenges and bring ideas to life even with limited knowledge and resources.</li>
-            <li>Collaboration: Effective communicator and team player, able to work collaboratively with multidisciplinary teams to achieve project goals.</li>
-            <li>Research: Experienced in conducting research projects, with a focus on the practical applications of emerging technologies in game development.</li>
-        </ul>
+            <h2>Education</h2>
+            <p><strong>BSc (Hons) Games Programming</strong><br>
+               London Metropolitan University, UK (July 2023)</p>
+            <p>Achieved a Second Class degree with a focus on Unity 2D and advanced C++ programming. Relevant coursework includes Game Design, Game Development, Game Engine Architecture, 3D Graphics Programming, and Artificial Intelligence.</p>
 
-        <h2>Projects</h2>
-        <article>
-            <h3>Deruta Realm</h3>
-            <p>To Be Confirmed (TBC)</p>
+            <h2>Key Skills</h2>
+            <ul class="skills-list">
+                <li>Unity 2D: Proficient in developing 2D games and applications using Unity Engine; experienced with asset creation, physics, and UI implementation.</li>
+                <li>C++ Programming: Advanced knowledge of C++, with experience in designing and developing efficient game systems, data structures, and algorithms.</li>
+                <li>Problem Solving: Excellent problem-solving skills, able to overcome challenges and bring ideas to life even with limited knowledge and resources.</li>
+                <li>Collaboration: Effective communicator and team player, able to work collaboratively with multidisciplinary teams to achieve project goals.</li>
+                <li>Research: Experienced in conducting research projects, with a focus on the practical applications of emerging technologies in game development.</li>
+            </ul>
 
-            <h3>Mind of Solitude (Game Off Game Jam 2023)</h3>
-            <p>Spearheaded the development of a 3D Unity game, enhancing user engagement through low-poly art and performance optimization for WebGL.</p>
+            <h2>Projects</h2>
+            <article>
+                <h3>Deruta Realm</h3>
+                <p>To Be Confirmed (TBC)</p>
 
-            <h3>SpaceRocks 2</h3>
-            <p>Single-handedly designed a Unity 2D game prototype, integrating advanced particle systems and URP lighting, and devised a pre-deterministic AI system to enrich the gaming experience.</p>
+                <h3>Mind of Solitude (Game Off Game Jam 2023)</h3>
+                <p>Spearheaded the development of a 3D Unity game, enhancing user engagement through low-poly art and performance optimization for WebGL.</p>
 
-            <h3>Curse of the Old Kings (University Project)</h3>
-            <p>Enhanced a UE5 third-person dungeon crawler through optimization and UI improvements, contributing significantly to project success.</p>
+                <h3>SpaceRocks 2</h3>
+                <p>Single-handedly designed a Unity 2D game prototype, integrating advanced particle systems and URP lighting, and devised a pre-deterministic AI system to enrich the gaming experience.</p>
 
-            <h3>Deruta Frank</h3>
-            <p>Innovatively developed a 2D game, integrating store-bought tilesets with unique systems, gameplay mechanics, and a comprehensive dialogue system.</p>
+                <h3>Curse of the Old Kings (University Project)</h3>
+                <p>Enhanced a UE5 third-person dungeon crawler through optimization and UI improvements, contributing significantly to project success.</p>
 
-            <h3>SpaceRocks (GBA)</h3>
-            <p>Directed the development, ensuring completion and excellence in game design and functionality, leading a team through effective debugging and feature enhancement.</p>
-        </article>
+                <h3>Deruta Frank</h3>
+                <p>Innovatively developed a 2D game, integrating store-bought tilesets with unique systems, gameplay mechanics, and a comprehensive dialogue system.</p>
+
+                <h3>SpaceRocks (GBA)</h3>
+                <p>Directed the development, ensuring completion and excellence in game design and functionality, leading a team through effective debugging and feature enhancement.</p>
+            </article>
+        </section>
     </main>
-    <footer class="footer">Artwork made by Anna Tomatzidou</footer>
+
+    <!-- Footer -->
+    <footer>
+        Artwork made by Anna Tomatzidou
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
