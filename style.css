@@ -255,7 +255,33 @@ footer {
 }
 
 
-/* Two Column Layout for Education and Skills */
+/* Restored Key Skill Styles with Better Readability */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    background-color: #292929;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #FFFFFF; /* Ensure text color is white for readability */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+    color: #BB86FC; /* Icon color remains purple */
+    margin-right: 10px;
+}
+
+.skills-list span {
+    font-weight: bold; /* Highlight skill names for better readability */
+}
+
+/* Improved Column Layout */
 .two-column {
     display: flex;
     gap: 30px;
@@ -271,6 +297,37 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
 }
+
+/* Improved Footer to Fix Issues on Index Page */
+.wrapper {
+    flex: 1;
+    padding-bottom: 80px; /* Ensure enough padding for footer space */
+}
+
+footer {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+/* Section Title Styling */
+.section-title, .subsection-title {
+    color: #BB86FC;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
 
 /* Keyframe Animations */
 @keyframes fadeIn {
