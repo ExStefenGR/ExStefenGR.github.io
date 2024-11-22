@@ -14,6 +14,20 @@ html, body {
     line-height: 1.8;
     font-size: 1.1rem;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures that the body takes up the entire viewport height */
+}
+
+/* Wrapper Styles for Main Content and Footer */
+.wrapper {
+    flex: 1; /* Makes sure the main content area takes up remaining space */
+    padding-bottom: 60px; /* Gives space for the footer */
 }
 
 a {
@@ -223,11 +237,15 @@ header h2 {
 footer {
     background-color: #1F1F1F;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #FFFFFF;
     width: 100%;
     position: fixed;
     bottom: 0;
+    left: 0;
+    height: 60px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
 }
 
 /* Keyframe Animations */
