@@ -239,18 +239,12 @@ footer {
     padding: 15px;
     color: #FFFFFF;
     width: 100%;
-    position: relative; /* Footer should be relative, but stick at the bottom if content is small */
+    position: sticky; /* Footer stays at the bottom when content is short */
     bottom: 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
     z-index: 1000;
     font-size: 1rem;
-    margin-top: auto; /* Push the footer to the bottom if page content is short */
-}
-
-/* Adding a margin to the wrapper so the footer doesn’t overlap content */
-.wrapper {
-    flex: 1;
-    padding-bottom: 60px; /* Matches the footer height */
+    margin-top: auto; /* Pushes footer to the bottom of short content pages */
 }
 
 /* Restored Key Skill Styles with Better Readability */
@@ -266,7 +260,7 @@ footer {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
-    color: #FFFFFF;
+    color: #FFFFFF; /* Ensure text color is white for readability */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -276,7 +270,7 @@ footer {
 }
 
 .skills-list span {
-    font-weight: bold;
+    font-weight: bold; /* Highlight skill names for better readability */
 }
 
 /* Improved Column Layout */
