@@ -251,26 +251,63 @@ footer {
 .skills-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .skills-list li {
     display: flex;
     align-items: center;
     background-color: #292929;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 15px;
-    border-radius: 5px;
-    color: #FFFFFF; /* Ensure text color is white for readability */
+    border-radius: 8px;
+    color: #FFFFFF;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap; /* Ensures proper wrapping for smaller screens */
+}
+
+.skills-list li:hover {
+    background-color: #383838; /* Adds a slight hover effect */
+    transform: scale(1.02); /* Subtle zoom effect */
+    transition: all 0.2s ease-in-out;
 }
 
 .skill-icon {
     color: #BB86FC;
     margin-right: 10px;
+    font-size: 1.5rem; /* Makes the icon slightly larger */
 }
 
 .skills-list span {
-    font-weight: bold; /* Highlight skill names for better readability */
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-basis: 100%; /* Forces the skill name to take full width on small screens */
+    margin-bottom: 5px;
+}
+
+.skills-list p {
+    margin: 0;
+    font-size: 0.95rem; /* Adjusts font size for better readability */
+    line-height: 1.5;
+}
+
+/* For Mobile */
+@media (max-width: 768px) {
+    .skills-list li {
+        padding: 10px; /* Adjusts padding for smaller screens */
+    }
+
+    .skill-icon {
+        font-size: 1.2rem;
+    }
+
+    .skills-list span {
+        font-size: 1rem;
+    }
+
+    .skills-list p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Improved Column Layout */
