@@ -133,27 +133,6 @@ nav {
 }
 
 /* Header Styles with Parallax Effect */
-header {
-    text-align: center;
-    padding: 60px 20px 40px;
-    background-image: url('images/Thess.png'); /* Fallback for browsers that don't support image-set */
-    background-size: cover;
-    background-position: center;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    animation: fadeIn 2s ease-in-out, parallax 10s ease-in-out infinite alternate;
-}
-
-@supports (background-image: image-set(url('images/Thess.png') 1x)) {
-    header {
-        background-image: image-set(
-            url('images/Thess.avif') type('image/avif') 1x,
-            url('images/Thess.webp') type('image/webp') 1x,
-            url('images/Thess.jpg') type('image/jpeg') 1x
-        );
-    }
-}
-
 header h1 {
     font-size: 3rem;
     margin-bottom: 20px;

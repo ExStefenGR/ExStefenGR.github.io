@@ -35,14 +35,40 @@
 
     <!-- Preload Background Image -->
     <link rel="preload" as="image" href="images/Thess.avif" type="image/avif">
-    <link rel="preload" as="image" href="images/Thess.webp" type="image/webp">
-    <link rel="preload" as="image" href="images/Thess.jpg" type="image/jpeg">
+
+        <!-- Inline Critical CSS -->
+        <style>
+            /* Critical Header Styles */
+            header {
+                text-align: center;
+                padding: 60px 20px 40px;
+                background-image: url('images/Thess.avif'); /* Use the most preferred format */
+                background-size: cover;
+                background-position: center;
+                color: #FFFFFF;
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+                animation: fadeIn 2s ease-in-out, parallax 10s ease-in-out infinite alternate;
+            }
+    
+            @supports not (background-image: url('images/Thess.avif')) {
+                header {
+                    background-image: url('images/Thess.webp');
+                }
+            }
+    
+            @supports not (background-image: url('images/Thess.webp')) {
+                header {
+                    background-image: url('images/Thess.jpg');
+                }
+            }
+        </style>
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Preconnect to External Resources -->
     <link rel="preconnect" href="https://buttons.github.io" crossorigin>
 
-    <!-- Link to Stylesheet -->
-    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon and Touch Icons -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
