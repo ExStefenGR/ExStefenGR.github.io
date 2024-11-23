@@ -16,22 +16,23 @@
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="ExStefen - Games Programmer">
     <meta property="og:description" content="Welcome to ExStefen's portfolio website.">
-    <meta property="og:image" content="https://www.exstefen-studios.dev/images/stef.png">
+    <meta property="og:image" content="https://www.exstefen-studios.dev/images/Stef.png">
     <meta property="og:url" content="https://www.exstefen-studios.dev/">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ExStefen - Games Programmer">
     <meta name="twitter:description" content="Welcome to ExStefen's portfolio website.">
-    <meta name="twitter:image" content="https://www.exstefen-studios.dev/images/stef.png">
+    <meta name="twitter:image" content="https://www.exstefen-studios.dev/images/Stef.png">
 
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' https://buttons.github.io;
+    script-src 'self' 'unsafe-inline' https://buttons.github.io;
     style-src 'self' 'unsafe-inline';
     frame-src 'self' https://itch.io;
     img-src 'self' data: https://img.itch.zone;">
+
 
 
     <!-- Preconnect to External Resources -->
@@ -152,25 +153,6 @@
     </footer>
 
     <!-- JavaScript for Menu Toggle -->
-    <script>
-        // JavaScript for Menu Toggle
-        const navToggle = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
-
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-        });
-
-        // Smooth scrolling when clicking anchor links (if applicable)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
     <script type="application/ld+json">
         {
         "@context": "http://schema.org",
