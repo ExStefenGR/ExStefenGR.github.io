@@ -33,7 +33,7 @@ body {
 }
 
 a {
-    color: #BB86FC;
+    color: #8688fc;
     text-decoration: none;
 }
 
@@ -100,7 +100,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #BB86FC;
+    color: #8692fc;
 }
 
 /* Animated Mobile Menu */
@@ -190,7 +190,7 @@ header h2 {
 }
 
 .project-card h3 {
-    color: #BB86FC;
+    color: #86affc;
     margin-bottom: 10px;
     font-size: 1.4rem;
     text-align: center;
@@ -251,7 +251,7 @@ header h2 {
 }
 
 .blog-button {
-    background-color: #670a8b;
+    background-color: #0c0a8b;
     color: #FFFFFF;
     text-align: center;
     padding: 10px 20px;
@@ -261,7 +261,7 @@ header h2 {
 }
 
 .blog-button:hover {
-    background-color: #985EFF;
+    background-color: #615eff;
     transform: scale(1.1);
 }
 
@@ -306,7 +306,7 @@ footer {
 }
 
 .skill-icon {
-    color: #BB86FC;
+    color: #869cfc;
     margin-right: 10px;
     font-size: 1.5rem; /* Makes the icon slightly larger */
 }
@@ -371,7 +371,7 @@ footer {
 
 /* Section Title Styling */
 .section-title, .subsection-title {
-    color: #BB86FC;
+    color: #86a2fc;
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
