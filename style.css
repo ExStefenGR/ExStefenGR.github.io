@@ -156,12 +156,20 @@ header h2 {
 }
 
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 20px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #86a2fc #1F1F1F;
+    scroll-snap-type: x mandatory;
 }
 
 .project-card {
+    flex: 0 0 auto;
+    width: 280px; /* Adjust as needed */
+    scroll-snap-align: start;
     background-color: #1F1F1F;
     border-radius: 10px;
     padding: 20px;
@@ -175,6 +183,22 @@ header h2 {
     animation: slideUp 1.5s ease-in-out;
     will-change: transform;
 }
+
+/* Scrollbar Styles for WebKit Browsers */
+.project-container::-webkit-scrollbar {
+    height: 10px;
+}
+.project-container::-webkit-scrollbar-track {
+    background: #1F1F1F;
+    border-radius: 10px;
+}
+
+.project-container::-webkit-scrollbar-thumb {
+    background-color: #86a2fc;
+    border-radius: 10px;
+    border: 2px solid #1F1F1F;
+}
+
 
 .project-card:hover {
     transform: scale(1.05) rotateY(5deg);
