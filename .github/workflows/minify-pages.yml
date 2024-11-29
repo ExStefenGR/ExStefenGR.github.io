@@ -30,20 +30,26 @@ jobs:
       - name: Minify HTML files
         run: |
           for file in *.html; do
-            html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o "$file" "$file";
+            echo "Minifying $file"
+            html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o "$file" "$file"
           done
 
       - name: Minify CSS files
         run: |
           for file in *.css; do
-            cleancss -o "$file" "$file";
+            echo "Minifying $file"
+            cleancss -o "$file" "$file"
           done
 
       - name: Minify JavaScript files
         run: |
           for file in *.js; do
-            terser "$file" -o "$file";
+            echo "Minifying $file"
+            terser "$file" -o "$file"
           done
+
+      - name: List files before deployment
+        run: ls -l
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
