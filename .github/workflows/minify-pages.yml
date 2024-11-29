@@ -3,7 +3,7 @@ name: Minify Pages
 on:
   push:
     branches:
-      - main
+      - main  # Adjust to your default branch
 
 jobs:
   build:
@@ -22,14 +22,14 @@ jobs:
         run: npm install html-minifier-terser -g
 
       - name: Add npm global bin to PATH
-        run: echo "PATH=$(npm config get prefix)/bin:\$PATH" >> $GITHUB_ENV
+        run: echo "$(npm config get prefix)/bin" >> $GITHUB_PATH
 
       - name: Verify Installation
-        run: html-minifier --version
+        run: html-minifier-terser --version
 
       - name: Minify HTML files
         run: |
-          html-minifier --input-dir ./src --output-dir ./dist --collapse-whitespace --remove-comments --minify-css true --minify-js true
+          html-minifier-terser --input-dir ./src --output-dir ./dist --collapse-whitespace --remove-comments --minify-css true --minify-js true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
