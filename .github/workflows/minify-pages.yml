@@ -21,6 +21,9 @@ jobs:
       - name: Install HTML Minifier
         run: npm install html-minifier-terser -g
 
+      - name: Add npm global bin to PATH
+        run: echo "PATH=$(npm config get prefix)/bin:\$PATH" >> $GITHUB_ENV
+
       - name: Verify Installation
         run: html-minifier --version
 
