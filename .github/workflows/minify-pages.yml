@@ -18,21 +18,35 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install HTML Minifier
-        run: npm install html-minifier-terser -g
+      - name: Install Minifiers
+        run: |
+          npm install html-minifier-terser -g
+          npm install clean-css-cli -g
+          npm install terser -g
 
       - name: Add npm global bin to PATH
         run: echo "$(npm config get prefix)/bin" >> $GITHUB_PATH
 
-      - name: Verify Installation
-        run: html-minifier-terser --version
-
       - name: Minify HTML files
         run: |
-          html-minifier-terser --input-dir ./src --output-dir ./dist --collapse-whitespace --remove-comments --minify-css true --minify-js true
+          for file in *.html; do
+            html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o "$file" "$file";
+          done
+
+      - name: Minify CSS files
+        run: |
+          for file in *.css; do
+            cleancss -o "$file" "$file";
+          done
+
+      - name: Minify JavaScript files
+        run: |
+          for file in *.js; do
+            terser "$file" -o "$file";
+          done
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: .
