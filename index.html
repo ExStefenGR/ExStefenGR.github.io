@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Character Encoding -->
     <meta charset="UTF-8">
     <link rel="canonical" href="https://www.exstefen-studios.dev/">
 
-    <!-- Viewport for Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page Title and Description -->
-    <title>QA/CQA Specialist | Games Programmer</title>
-    <title>Games Programmer|QA/CQA Specialist</title>
+    <title>ExStefen | Games Programmer & QA/CQA Specialist</title>
     <meta name="description"
-        content="Welcome to ExStefen's portfolio website. Games Programmer specializing in Unity, Unreal Engine 5 and QA/CQA.">
+        content="Welcome to the portfolio of ExStefen, a Games Programmer and QA/CQA Specialist specializing in Unity and Unreal Engine 5.">
 
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Games Programmer|QA/CQA Specialist">
+    <meta property="og:title" content="ExStefen | Games Programmer & QA/CQA Specialist">
     <meta property="og:description" content="Welcome to ExStefen's portfolio website.">
     <meta property="og:image" content="https://www.exstefen-studios.dev/images/Stef.png">
     <meta property="og:url" content="https://www.exstefen-studios.dev/">
+    <meta property="og:type" content="website">
 
-
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Games Programmer|QA/CQA Specialist">
+    <meta name="twitter:title" content="ExStefen | Games Programmer & QA/CQA Specialist">
     <meta name="twitter:description" content="Welcome to ExStefen's portfolio website.">
     <meta name="twitter:image" content="https://www.exstefen-studios.dev/images/Stef.png">
 
-    <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
     script-src 'self' 'unsafe-inline' https://buttons.github.io;
@@ -36,49 +28,103 @@
     frame-src 'self' https://itch.io;
     img-src 'self' data: https://img.itch.zone;">
 
-    <!-- Preload Background Image -->
-    <link rel="preload" as="image" href="images/Thess.avif" type="image/avif">
+    <link rel="preload" as="image" href="images/Thess.avif" type="image/avif" fetchpriority="high">
 
-        <!-- Inline Critical CSS -->
-        <style>
-            /* Critical Header Styles */
-            header {
-                text-align: center;
-                padding: 60px 20px 40px;
-                background-image: url('images/Thess.avif'); /* Use the most preferred format */
-                background-size: cover;
-                background-position: center;
-                color: #FFFFFF;
-                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-                animation: fadeIn 2s ease-in-out, parallax 10s ease-in-out infinite alternate;
-            }
-    
-            @supports not (background-image: url('images/Thess.avif')) {
-                header {
-                    background-image: url('images/Thess.webp');
-                }
-            }
-        </style>
-    
-    <!-- Link to Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { min-height: 100vh; font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #121212; color: #FFFFFF; line-height: 1.8; font-size: 1.1rem; overflow-x: hidden; display: flex; flex-direction: column; }
+        main { flex: 1; }
+        a { color: #8688fc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
-    <!-- Preconnect to External Resources -->
+        /* Navigation */
+        nav { background-color: #1F1F1F; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); animation: fadeInDown 1.5s ease-in-out; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+        .nav-brand { font-size: 1.5rem; font-weight: bold; color: #FFFFFF; animation: floatingText 3s infinite ease-in-out; }
+        .nav-toggle { display: none; flex-direction: column; cursor: pointer; }
+        .nav-toggle span { height: 3px; width: 25px; background-color: #FFFFFF; margin: 4px 0; border-radius: 2px; transition: transform 0.3s ease; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin: 0 15px; }
+        .nav-links a { color: #FFFFFF; font-size: 1rem; transition: color 0.3s; }
+        .nav-links a:hover { color: #8692fc; }
+
+        /* Header */
+        header { text-align: center; padding: 60px 20px 40px; background-image: url('images/Thess.avif'); background-size: cover; background-position: center; color: #FFFFFF; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); animation: fadeIn 2s ease-in-out, parallax 10s ease-in-out infinite alternate; }
+        @supports not (background-image: url('images/Thess.avif')) { header { background-image: url('images/Thess.webp'); } }
+        header h1 { font-size: 3rem; margin-bottom: 20px; animation: fadeInUp 2s ease-in-out; }
+        header h2 { font-size: 1.5rem; font-weight: normal; animation: fadeInUp 2.5s ease-in-out; }
+
+        /* Sections */
+        .projects-section, .blog-section { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .section-title { color: #86a2fc; text-align: center; margin-bottom: 20px; font-size: 2rem; text-transform: uppercase; letter-spacing: 1.5px; }
+
+        /* Projects Section */
+        .project-container { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 20px; padding-top: 5px; padding-bottom: 20px; scrollbar-width: thin; scrollbar-color: #86a2fc #1F1F1F; scroll-snap-type: x mandatory; }
+        .project-container::-webkit-scrollbar { height: 10px; }
+        .project-container::-webkit-scrollbar-track { background: #1F1F1F; border-radius: 10px; }
+        .project-container::-webkit-scrollbar-thumb { background-color: #86a2fc; border-radius: 10px; border: 2px solid #1F1F1F; }
+        .project-card { flex: 0 0 280px; scroll-snap-align: start; background-color: #1F1F1F; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; align-items: center; transition: transform 0.3s ease, box-shadow 0.3s ease; will-change: transform; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); }
+        .project-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+        .project-card h3 { color: #86affc; margin-bottom: 10px; font-size: 1.4rem; text-align: center; }
+        .project-card p { text-align: center; font-size: 1rem; line-height: 1.6; color: #E0E0E0; margin-bottom: 15px; flex-grow: 1; }
+        .button { display: inline-block; background-color: #8688fc; color: #FFFFFF; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s, transform 0.3s; }
+        .button:hover { background-color: #615eff; transform: scale(1.05); }
+
+        /* Cyberpunk Card Hover */
+        .cyberpunk-card {
+            flex: 0 0 280px;
+            scroll-snap-align: start;
+            background-color: #1F1F1F;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            will-change: transform;
+        }
+        .cyberpunk-card:hover {transform: translateY(-5px); background-color: #F9F400; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); }
+        .cyberpunk-card:hover h3, .cyberpunk-card:hover p { color: #000000; }
+        .cyberpunk-card:hover .button { background-color: #E60012; color: #ffffff; box-shadow: 0 0 0 4px #ffffff, 0 10px 12px rgba(0, 0, 0, 0.5); }
+        
+        /* Blog Section */
+        .blog-section { text-align: center; padding: 40px 20px; background-color: #1F1F1F; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+        .blog-button { background-color: #0c0a8b; color: #FFFFFF; font-size: 1.2rem; }
+        .blog-button:hover { background-color: #615eff; }
+
+        /* Footer */
+        footer { background-color: #1F1F1F; text-align: center; padding: 20px; color: #FFFFFF; width: 100%; box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4); margin-top: auto; }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-toggle { display: flex; }
+            .nav-links { position: fixed; left: -100%; top: 60px; flex-direction: column; background-color: #1F1F1F; width: 100%; height: calc(100% - 60px); padding-top: 20px; transition: left 0.5s ease-in-out; }
+            .nav-links.show { left: 0; }
+            .nav-links li { margin: 15px 0; text-align: center; }
+            header h1 { font-size: 2.5rem; }
+            header h2 { font-size: 1.2rem; }
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeInDown { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes floatingText { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+        @keyframes parallax { from { background-position: center 0%; } to { background-position: center 20%; } }
+    </style>
+
     <link rel="preconnect" href="https://buttons.github.io" crossorigin>
 
-
-    <!-- Favicon and Touch Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
-
-    <!-- Web App Manifest for PWA -->
-    <link rel="manifest" href="/manifest.json">
-
-    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
@@ -89,12 +135,12 @@
         "sameAs": [
             "https://www.linkedin.com/in/stefanos-t/",
             "https://github.com/exstefengr",
-            "https://twitter.com/exstefen"
+            "https://x.com/ExStefen",
+            "https://bsky.app/profile/exstefen-studios.dev"
         ]
     }
     </script>
 
-    <!-- Async or Defer JavaScript -->
     <script defer src="https://buttons.github.io/buttons.js"></script>
     <script defer src="menu-toggle.js"></script>
 
