@@ -187,9 +187,21 @@ header h2 {
     flex-direction: column;
     align-items: center;
     transform: scale(1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, color 0.5s ease;
     animation: slideUp 1.5s ease-in-out;
     will-change: transform;
+}
+
+.cyberpunk-card:hover {
+    background-color: #F9F400;
+}
+.cyberpunk-card:hover h3,
+.cyberpunk-card:hover p {
+    color: #000000;
+}
+.cyberpunk-card:hover .button {
+    background-color: #000000;
+    color: #F9F400;
 }
 
 /* Scrollbar Styles for WebKit Browsers */
